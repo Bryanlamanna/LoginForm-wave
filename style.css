@@ -79,7 +79,7 @@ h1 {
     background-color: transparent;
     border: none;
     outline: none;
-    border-bottom: 2px solid rgba(0, 255, 255, .5);
+    border-bottom: 2px solid rgba(0, 255, 255, .3);
     transition: border .3s;
 }
 
@@ -107,6 +107,7 @@ h1 {
     font-size: 13px;
     text-decoration: none;
     margin-right: 10px;
+    margin-top: 4px;
 }
 
 .forgot-password:hover {
@@ -122,9 +123,9 @@ h1 {
 #remind::after {
     content: 'lembrar-me';
     color: rgb(184, 184, 184);
-    position: absolute;
+    margin-top: 4px;
     
-    transform: translate(17px,-2px);
+    
 }
 
 #userIcon, #passwordIcon {
@@ -139,6 +140,21 @@ h1 {
 
 .fa-apple {
   transform: scale(115%);
+}
+
+@keyframes LightSwipe {
+  0% {
+    color: unset;
+  }
+  50%{
+    color: rgba(0, 255, 255, 0.8);
+  }
+  80% {
+    color: unset;
+  }
+  100%{
+    color: unset;
+  }
 }
 
 @keyframes rotate {
@@ -195,6 +211,7 @@ h1 {
 }
 .btn-40 {
   border: rgb(255, 255, 255) 1px solid;
+  
   box-sizing: border-box;
   display: block;
   font-weight: 900;
@@ -236,25 +253,40 @@ h1 {
 
 .line {
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 15px;
   color: rgb(226, 226, 226);
-  margin-bottom: 15px;
+  margin-bottom: 15px;  
+  z-index: 99;
+  
+  width: 80%;
+  height: 25px;
+  border-radius: 8px;
+}
+
+.line::before {
+  content: '_______________';
+  margin: 0 auto;
+  
+  transform: translate(0,-50px);
+  color: transparent;
+  
+  width: 15em;
+  
   
 }
 
 .line::after {
-  position: absolute;
-  transform: translate(5px,-5px);
-  content: '____________';
-  color: aqua;
+  content: '_______________';
+  margin: 0 auto;
+  
+ color: transparent;
+  
+  
+  width: 15em;
+  height: 3px;
+  
 }
 
-.line::before {
-  position: absolute;
-  transform: translate(-85px,-5px);
-  content: '____________';
-  color: aqua;
-}
 
 @media (max-width: 768px) {
 
@@ -280,6 +312,26 @@ h1 {
   .form {
     width: 300px;
   }
+
+
+  .forgot-password {
+    
+    margin-right: -2.7em;
+}
+
+
+#remind {
+  margin-top: 2px;
+  margin-left: -2.6em;
+}
+
+#remind::after {
+    content: 'lembrar-me';
+    color: rgb(184, 184, 184);
+    position: absolute;
+    
+    transform: translate(17px,-2px);
+}
 
 
 }
