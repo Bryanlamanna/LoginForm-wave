@@ -225,3 +225,32 @@ h1 {
 .btn-40:hover .new {
   transform: translateX(0);
 }
+
+
+@media (max-width: 768px) {
+
+  .box {
+    
+    width: 300px;
+    
+  }
+
+  .box::before {
+    height: 520px;
+    width: 300px;
+   
+}
+
+  .box::after {
+    
+   
+    width: 300px;
+    
+}
+
+  .form {
+    width: 300px;
+  }
+
+
+}
