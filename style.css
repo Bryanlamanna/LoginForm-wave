@@ -7,7 +7,8 @@
 
 body {
     color: white;
-    background-color: rgb(56, 56, 56);
+    background: linear-gradient(180deg, rgb(63, 63, 63), rgb(56, 56, 56),  rgb(56, 56, 56));
+    
     justify-content: center;
     min-height: 100vh;
     align-items: center;
@@ -105,6 +106,7 @@ h1 {
     color: rgb(184, 184, 184);
     font-size: 13px;
     text-decoration: none;
+    margin-right: 10px;
 }
 
 .forgot-password:hover {
@@ -114,6 +116,7 @@ h1 {
 
 #remind {
     margin-top: 2px;
+    margin-left: 10px;
 }
 
 #remind::after {
@@ -121,7 +124,7 @@ h1 {
     color: rgb(184, 184, 184);
     position: absolute;
     
-    transform: translate(15px,-2px);
+    transform: translate(17px,-2px);
 }
 
 #userIcon, #passwordIcon {
@@ -148,6 +151,11 @@ h1 {
     }
 }
 
+#login-btn .new {
+  background-color: aqua;
+  color: rgb(110, 110, 110);
+  font-size: 25px;
+}
 
 .btn-40,
 .btn-40 *,
@@ -210,7 +218,7 @@ h1 {
   transform: translateY(100%);
 }
 .btn-40 .new {
-   
+   border-radius: 8px;
   background: rgb(110, 110, 110);
   outline: none;
   color: aqua;
@@ -226,12 +234,33 @@ h1 {
   transform: translateX(0);
 }
 
+.line {
+  margin: 0 auto;
+  margin-top: 10px;
+  color: rgb(226, 226, 226);
+  margin-bottom: 15px;
+  
+}
+
+.line::after {
+  position: absolute;
+  transform: translate(5px,-5px);
+  content: '____________';
+  color: aqua;
+}
+
+.line::before {
+  position: absolute;
+  transform: translate(-85px,-5px);
+  content: '____________';
+  color: aqua;
+}
 
 @media (max-width: 768px) {
 
   .box {
     
-    width: 309px;
+    width: 309  px;
     
   }
 
