@@ -39,6 +39,7 @@ body {
     width: 400px;
     background-color: rgb(110, 110, 110);
     z-index: 1;
+   
 }
 
 .box::before {
@@ -100,6 +101,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
+    width: 19em;
 }
 
 .forgot-password {
@@ -110,23 +112,22 @@ h1 {
     margin-top: 4px;
 }
 
+.remind-me {
+  color: rgb(184, 184, 184);
+  font-size: 13px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 4px;
+  cursor: default;
+}
+
 .forgot-password:hover {
     text-decoration: underline 1px solid rgb(184, 184, 184);
     color: rgb(243, 243, 243);
 }
 
-#remind {
-    margin-top: 2px;
-    margin-left: 10px;
-}
 
-#remind::after {
-    content: 'lembrar-me';
-    color: rgb(184, 184, 184);
-    margin-top: 4px;
-    
-    
-}
+
 
 #userIcon, #passwordIcon {
     position: absolute;
@@ -314,24 +315,13 @@ h1 {
   }
 
 
-  .forgot-password {
-    
-    margin-right: -2.7em;
+.forgot {
+  width: 19em;
 }
 
 
-#remind {
-  margin-top: 2px;
-  margin-left: -2.6em;
-}
 
-#remind::after {
-    content: 'lembrar-me';
-    color: rgb(184, 184, 184);
-    position: absolute;
-    
-    transform: translate(17px,-2px);
-}
+
 
 
 }
