@@ -101,14 +101,14 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
-    width: 19em;
+    width: 18em;
 }
 
 .forgot-password {
     color: rgb(184, 184, 184);
     font-size: 13px;
     text-decoration: none;
-    margin-right: 10px;
+    
     margin-top: 4px;
 }
 
